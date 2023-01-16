@@ -1,0 +1,71 @@
+*{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(./images_logos/BG\ Image.png);
+    background-size: contain;
+}
+
+
+/* Page 1 CSS */
+#homeHeader{
+    display: flex;
+    height: 50vh;
+    font-size: larger;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#playButtonSection{
+    display: flex;
+    height: 45vh;
+    justify-content: center;
+}
+
+#playButton{
+    height: 50%;
+}
+
+#playButton:hover{
+    cursor: pointer;
+}
+
+
+/* Page 2 CSS */
+#playHeader{
+    display: none;
+    height: 30vh;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    color: pink;
+    margin: 0 auto;
+}
+
+#playCounter{
+    font-size: 5vh;
+}
+
+#playExit{
+    height: 25%;
+    filter: invert();
+}
+
+#playExit:hover{
+    cursor: pointer;
+}
+
+#playArea{
+    display: none;
+    height: 75vh;
+    overflow-y: hidden;
+}
+
+#ball{
+    height: 25%;
+    position: absolute;
+}
