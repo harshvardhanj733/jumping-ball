@@ -3,6 +3,11 @@ let play = ()=>{
     playButtonSection.style.display = "none";
     playHeader.style.display = "flex";
     playArea.style.display = "flex";
+    playBuildings.style.display = "block";
+    document.body.style.backgroundImage = "none";
+    playBuildings.style.animation = "obstacles linear 60s infinite";
+    playBuildings.style.width = "8500vw";
+    ball.style.animation = "ballRotation linear 6s infinite";
     setInterval(gravity, 60);
 }
 

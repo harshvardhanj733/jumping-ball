@@ -48,6 +48,7 @@ body{
 
 #playCounter{
     font-size: 5vh;
+    z-index: 1;
 }
 
 #playExit{
@@ -68,4 +69,36 @@ body{
 #ball{
     height: 25%;
     position: absolute;
+}
+
+#playBuildings{
+    background-image: url(./images_logos/BG\ Image.png);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+@keyframes obstacles {
+    100%{
+        transform: translateX(-8400vw);
+    }
+}
+
+@keyframes ballRotation {
+    25%{
+        transform: rotate3d(90deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    75%{
+        transform: rotateZ(270deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
 }
